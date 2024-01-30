@@ -56,11 +56,13 @@ const showWinner = (winner) => {
 };
 
 const draw = () => {
-  msgContainer.classList.remove("hide");
-  msg.innerText = `This is a draw`;
-  boxes.forEach((box) => {
-    box.disabled = true;
-  });
+  if (count === 9) {
+    msgContainer.classList.remove("hide");
+    msg.innerText = `This is a draw`;
+    boxes.forEach((box) => {
+      box.disabled = true;
+    });
+  }
 };
 
 const checkWinner = () => {
@@ -69,14 +71,17 @@ const checkWinner = () => {
     let val2 = boxes[condition[1]].innerText;
     let val3 = boxes[condition[2]].innerText;
 
-    if (val1 != "" && val2 != "" && val3 != "") {
-      if (val1 == val2 && val2 == val3) {
+    if (val1 !== "" && val2 !== "" && val3 !== "") {
+      if (val1 === val2 && val2 === val3) {
         showWinner(val1);
         return true;
       }
     }
   }
+
+  return false; // No winner found
 };
+
 
 // Functions for new game and reset
 
