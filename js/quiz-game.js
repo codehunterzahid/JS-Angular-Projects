@@ -121,7 +121,7 @@ const scoreCard = () => {
 
   if (score >= 3) {
     question.innerText = `Congratulations. You scored ${score} out of ${questions.length}`;
-  } else{
+  } else {
     question.innerText = `Bad Performance! You scored ${score} out of ${questions.length}`;
   }
 
