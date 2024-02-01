@@ -15,7 +15,7 @@ body {
   height: 100%;
   background-color: #dee1e8;
   padding: 2rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
   border: 1px solid white;
   border-radius: 10px;
 }
@@ -25,6 +25,7 @@ body {
   height: 12vh;
   background-color: transparent;
   border: none;
+  outline: none;
   margin-bottom: 2rem;
   font-size: 2rem;
   text-align: end;
@@ -35,16 +36,21 @@ body {
   box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
 }
 
-.calculator input::placeholder{
-    color: black;
+
+.calculator input::placeholder {
+  color: black;
 }
 
-.calculator button{
-    width: 55px;
-    height: 3rem;
-    margin: 5px;
-    background-color: transparent;
-    color: black;
-    border: none;
-    border-radius: 50%;
+.calculator button {
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  font-size: 23px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
 }
+
