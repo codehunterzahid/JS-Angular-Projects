@@ -71,7 +71,6 @@ function clearEntry() {
     currentExpression = "";
     input.value = "0";
 }
-
 function appendToExpression(value) {
     currentExpression += value;
     input.value = currentExpression;
