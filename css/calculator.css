@@ -11,7 +11,7 @@ body {
 }
 
 .calculator {
-  width: 20%;
+  width: 40%;
   height: 100%;
   background-color: #dee1e8;
   padding: 2rem;
@@ -42,20 +42,34 @@ body {
 }
 
 .calculator button{
-  width: 54px;
-  height: 54px;
+  width: 75px;
+  height: 50px;
   margin: 5px;
   font-size: 23px;
   background-color: transparent;
   color: black;
   border: none;
-  border-radius: 50%;
+  font-weight: 600;
+  border-radius: 10px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
+  cursor: pointer;
 }
 
 .calculator button.equal {
   background: linear-gradient(145deg, #fb3e21, #fd5454);
+  box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
+  color: white;
+}
+
+.calculator button.delete{
+  background: linear-gradient(145deg, red, red);
+  box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
+  color: white;
+}
+
+.calculator button.ac{
+  background: linear-gradient(145deg, green, green);
   box-shadow: 8px 8px 15px #aaaaaa, -8px -8px 15px #ffffff;
   color: white;
 }
