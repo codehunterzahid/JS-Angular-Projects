@@ -7,6 +7,7 @@ const downloadBtn = document.querySelector(".download-btn");
 generateBtn.addEventListener("click", () =>{
     if(input.value == ""){
         input.classList.add("error");
+        alert("Enter Valid Input");
         setTimeout(() =>{
             input.classList.remove("error");
         }, 1000); 
@@ -14,6 +15,7 @@ generateBtn.addEventListener("click", () =>{
         qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${input.value}`;
         input.value = "";
         imgBox.classList.add("show");
+        input.classList.add("hideText");
 
         generateBtn.style.display = "none";
         downloadBtn.style.display = "block";
