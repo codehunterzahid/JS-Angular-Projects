@@ -8,7 +8,7 @@ body{
 }
 
 .home{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.832), rgba(0, 0, 0, 0.875)), url(../Assets/home.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.789)), url(../Assets/home.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

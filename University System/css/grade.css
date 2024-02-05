@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.portal {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  padding: 4rem;
+}
+
+.image {
+  background-image: url(../Assets/books.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+}
+
+.logo {
+  width: 400px;
+}
+
+p {
+  padding: 0.5rem 0;
+  padding-bottom: 0;
+  width: 80%;
+  opacity: 0.8;
+}
+
+input {
+  width: 20%;
+}
+
+label {
+  opacity: 0.7;
+}
+
+.my-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #727cf5;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+.copyright {
+  opacity: 0.7;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-size: 15px;
+  transition: all ease 0.5s;
+}
+
+.copyright:hover {
+  text-decoration: underline;
+  color: blue;
+  opacity: 1;
+}
+
+.resultCard {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 0;
+  display: none;
+  transition: max-height 1s ease;
+}
+
+.showResult {
+  max-height: 100vh;
+  display: block;
+}
+
+#header {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 20px;
+}
+
+#studentInfo {
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+#studentInfo p,
+#studentInfo p strong {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 9px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+#downloadBtn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 0;
+  cursor: pointer;
+}
