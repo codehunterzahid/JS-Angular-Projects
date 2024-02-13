@@ -66,7 +66,7 @@ body {
 }
 
 .inputContainer {
-    position: relative;
+  position: relative;
   width: 100%;
   position: relative;
   display: flex;
@@ -75,11 +75,11 @@ body {
   z-index: 2;
 }
 
-#openEye{
-    position: absolute;
-    cursor: pointer;
-    right: 3px;
-    color: blue;
+#openEye {
+  position: absolute;
+  cursor: pointer;
+  right: 3px;
+  color: blue;
 }
 
 .inputIcon {
@@ -101,7 +101,6 @@ body {
   padding-left: 30px;
   transition: border-bottom 0.4s;
 }
-
 
 .inputField:focus {
   outline: none;
