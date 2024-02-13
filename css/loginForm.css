@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #212121; */
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form_main {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 30px;
+  /* box-shadow: rgba(209, 193, 255, 0.5) 0px 30px 90px; */
+  /* box-shadow: rgba(209, 193, 255, 0.56) 0px 5px 90px 4px; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form_main::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  background-color: rgb(209, 193, 255);
+  transform: rotate(45deg);
+  left: -180px;
+  top: 75px;
+  z-index: 1;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+
+.heading {
+  font-size: 3rem;
+  color: #2e2e2e;
+  font-weight: 700;
+  /* margin: 5px 0 10px 0; */
+  z-index: 2;
+}
+
+.inputContainer {
+    position: relative;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#openEye{
+    position: absolute;
+    cursor: pointer;
+    right: 3px;
+    color: blue;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 3px;
+}
+
+.inputField {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(173, 173, 173);
+  /* margin: 10px 0; */
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 30px;
+  transition: border-bottom 0.4s;
+}
+
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(199, 114, 255);
+  transition: border-bottom 0.4s;
+}
+
+.inputField::placeholder {
+  color: rgb(80, 80, 80);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#button {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(162, 104, 255);
+  height: 45px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  /* margin: 10px; */
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+#button:hover {
+  background-color: rgb(126, 84, 255);
+  transition: background-color 0.4s;
+}
+
+.forgotLink {
+  z-index: 2;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(44, 24, 128);
+  text-decoration: none;
+  border-radius: 20px;
+}
