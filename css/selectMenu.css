@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #488AF5;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 10px 40px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all ease 0.5s;
+    display: none;
+}
+
+.btn:hover{
+    background-color: rgba(58, 153, 58, 0.994);
+    color: white;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.select{
+    width: 400px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.selectField{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 20px;
+    box-shadow: 0 0 5px black;
+
+}
+
+.selectField img{
+    width: 12px;
+    transition: transform 0.5s;
+}
+
+.list{
+    height: 325px;
+    width: 400px;
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.option img{
+    width: 25px;
+    margin-right: 20px;
+}
+
+.option{
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: #e3dfdf;
+}
+
+.hide{
+    visibility: hidden;
+}
