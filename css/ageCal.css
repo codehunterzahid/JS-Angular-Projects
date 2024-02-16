@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #28103a, #28103adb);
+    color: white;
+    padding-top: 5%;
+}
+
+.calculator h1{
+    color: #FFA808;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.input-box{
+    height: 80px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 5rem;
+    background-color: white;
+    padding: 0 1.5rem;
+}
+
+.input-box input{
+    height: 60%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #EFEEFE;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.input-box button{
+    height: 60%;
+    width: 25%;
+    background-color: #7E56F4;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.age-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    justify-content: space-between;
+}
+
+.age{
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+
+
+.age div{
+    font-size: 45px;
+}
+.age p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.714);
+}
