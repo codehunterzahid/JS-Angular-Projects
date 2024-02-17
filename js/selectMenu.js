@@ -15,5 +15,12 @@ for(let option of options){
         text.innerHTML = option.querySelector("p").innerHTML;
         list.classList.toggle("hide");
         arrow.classList.toggle("rotate");
+        btn.style.display = "block";
+
+        btn.innerHTML = `Go To ${text.innerHTML}`;
     })
 }
+
+btn.addEventListener("click", ()=>{
+    btn.href = `https://www.${text.innerHTML}.com`;
+})
