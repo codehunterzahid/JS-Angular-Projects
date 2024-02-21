@@ -11,25 +11,30 @@ body{
     background-color: #5372EF;
     overflow-x: hidden;
 }
-
-.quote-box{
+.quote-box {
     width: 45%;
-    height: 50vh;
+    min-height: 50vh; /* Change height to min-height */
     background-color: white;
     color: black;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     text-align: center;
     padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column; /* Added */
+    justify-content: center; /* Added */
 }
 
-.quote-box h1{
-    font-size: 35px;
-    margin-bottom: 2rem;
+.quote-box h1 {
+    font-size: 3vw; /* Responsive font size */
+    margin-bottom: 1rem;
 }
+
+
+
 
 .quote-box h1::after{
     content: "";
@@ -38,39 +43,46 @@ body{
     border-radius: 50px;
     background-color: blue;
     position: absolute;
-    bottom: 77%;
+    bottom: 81%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.quote{
-    font-size: 20px;
-    margin-top: 3rem;
+
+.quote {
+    font-size: 2vw; /* Responsive font size */
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .quote::after, .quote::before{
     content: '"';
 }
 
-.author{
+.author {
+    font-size: 1.5vw;
+    margin-top: 1rem;
     position: relative;
     top: 36%;
-    left: 35%;
+    left: 30%;
 }
+
 .author::before{
     content: "--";
 }
 
-.footer{
-    margin-top: 20%;
-}
-.footer hr{
-    margin-bottom: 1rem;
+.footer {
+    margin-top: 2rem; /* Adjusted */
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
+}
+
+.footer hr{
+    margin-bottom: 1rem;
 }
 
 .icons i{
