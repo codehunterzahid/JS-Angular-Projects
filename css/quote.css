@@ -31,6 +31,7 @@ body{
 .quote-box h1 {
     font-size: 3vw; /* Responsive font size */
     margin-bottom: 1rem;
+    position: relative;
 }
 
 
@@ -43,7 +44,7 @@ body{
     border-radius: 50px;
     background-color: blue;
     position: absolute;
-    bottom: 81%;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
 }

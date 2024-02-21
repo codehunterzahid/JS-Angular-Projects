@@ -21,5 +21,14 @@ newQuote.addEventListener("click", ()=>{
     getQuote(link);
 })
 
+copy.addEventListener("click", ()=>{
+    navigator.clipboard.writeText(quote.innerHTML);
+})
+
+twitter.addEventListener("click", ()=>{
+    const twitterLink = `https://twitter.com/intent/tweet?url=${quote.innerHTML}`;
+    window.open(twitterLink);
+})
+
 getQuote(link);
 
