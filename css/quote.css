@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+/* css/quote.css */
 *{
     padding: 0;
     margin: 0;
+    font-family: "Playfair Display SC", serif;
 }
 
 body{
     background-color: #5372EF;
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
 }
 
 .quote-box{
-    
+    width: 45%;
+    height: 55vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
 }
