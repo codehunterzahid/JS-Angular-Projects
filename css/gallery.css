@@ -5,12 +5,14 @@
 
 body{
     background-color: #191919;
+    overflow-y: hidden;
 }
 
 .gallery{
     display: flex;
     width: 900px;
     overflow-x: scroll;
+
 }
 
 .gallery::-webkit-scrollbar{
