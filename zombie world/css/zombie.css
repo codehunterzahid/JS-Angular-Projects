@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'my-fonts2';
     src: url('/Assets/fonts/Zombified.ttf') format('truetype');
@@ -16,12 +17,12 @@
     font-style: normal;
 }
 
-body{
+body {
     font-family: 'my-fonts', sans-serif;
     overflow: hidden;
 }
 
-.hero{
+.hero {
     height: 100vh;
     width: 100vw;
     background-image: url(../Assets/bg.jpg);
@@ -29,7 +30,7 @@ body{
     background-position: center;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 12vh;
     background-color: #8A0303;
@@ -39,7 +40,7 @@ body{
     align-items: center;
 }
 
-.list{
+.list {
     list-style: none;
     width: 50%;
     display: flex;
@@ -48,12 +49,12 @@ body{
     margin-right: 20px;
 }
 
-.list li{
+.list li {
     display: inline;
     font-size: 20px;
 }
 
-.list li a{
+.list li a {
     text-decoration: none;
     color: white;
     transition: all 0.5s ease;
@@ -67,39 +68,39 @@ body{
     background-color: yellow;
     transition: width 0.2s;
     margin-top: 5px;
-  }
+}
 
 .list li a:hover::after {
     width: 100%;
-  }
+}
 
-.logo-box{
+.logo-box {
     margin-left: 50px;
     width: 130px;
 }
 
-.logo{
+.logo {
     width: 100%;
     transform-style: preserve-3d;
     transition: transform 2s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: rotateY(360deg);
 }
 
 
-.login{
+.login {
     width: 50px;
     height: 40px;
     transition: transform 0.5s ease;
 }
 
-.login:hover{
+.login:hover {
     transform: scale(1.5);
 }
 
-.content{
+.content {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -110,27 +111,27 @@ body{
     cursor: progress;
 }
 
-.content h1{
+.content h1 {
     font-size: 60px;
-      text-shadow: 
-        -2px -2px 0 #fff,  
-         2px -2px 0 #fff,
-        -2px  2px 0 #fff,
-         2px  2px 0 #fff;
+    text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
     margin-bottom: 20px;
 }
 
-.content span{
+.content span {
     font-size: 50px;
     margin-top: 20px;
-    text-shadow: 
-    -2px -2px 0 #fff,  
-     2px -2px 0 #fff,
-    -2px  2px 0 #fff,
-     2px  2px 0 #fff;
+    text-shadow:
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
 }
 
-.footer{
+.footer {
     font-family: 'my-fonts2';
     position: absolute;
     width: 70%;
@@ -138,7 +139,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.footer-text{
+
+.footer-text {
     color: #FFC107;
     font-size: 30px;
     border: 1px solid #FF0000;
@@ -147,7 +149,7 @@ body{
     transition: transform 1s ease;
 }
 
-.footer-text:hover{
+.footer-text:hover {
     transform: translateY(-100px);
     cursor: pointer;
 }
