@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'my-fonts2';
+    src: url('/Assets/fonts/Zombified.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     font-family: 'my-fonts', sans-serif;
@@ -123,6 +129,18 @@ body{
      2px  2px 0 #fff;
 }
 
+.footer{
+    font-family: 'my-fonts2';
+    position: absolute;
+    width: 70%;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .footer-text{
     color: #FFC107;
+    font-size: 30px;
+    border: 1px solid #FF0000;
+    padding: 0 200px;
+    text-align: center;
 }
