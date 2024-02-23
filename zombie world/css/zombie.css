@@ -107,6 +107,7 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
     color: #FF0000;
+    cursor: progress;
 }
 
 .content h1{
@@ -143,4 +144,10 @@ body{
     border: 1px solid #FF0000;
     padding: 0 200px;
     text-align: center;
+    transition: transform 1s ease;
+}
+
+.footer-text:hover{
+    transform: translateY(-100px);
+    cursor: pointer;
 }
