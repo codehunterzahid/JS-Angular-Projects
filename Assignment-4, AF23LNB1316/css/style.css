@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 48, 0, 0.59), rgba(0, 38, 0, 0.53)), url(../images/cc-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem 0;
+}
+
+.logo{
+    font-weight: bold;
+    margin-left: 7rem;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.list{
+    list-style: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 7rem;
+}
+
+.list li a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.list li a:hover{
+    background-color:#4F716D;
+}
+
+.content{
+    width: 100%;
+    height: calc(100vh - 12vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.content p{
+    font-size: 25px;
+    margin: 1rem 0;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a{
+    text-decoration: none;
+    background-color: #40A249;
+    padding: 0.7rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    margin: 0 1rem;
+}
+
+.links a:hover{
+    background-color: green;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+}
+
+.about .heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: black;
+    font-size: 45px;
+}
+
+.about-me{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    width: 50%;
+    height: 100%;
+    margin: 3rem 1rem;
+}
+.info{
+    width: 50%;
+    height: 100%;
+    margin: 3rem 1rem;
+}
+
+.info div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.a{
+    margin-left: 114px;
+}
+.b{
+    margin-left: 102px;
+}
+.c{
+    margin-left: 96px;
+}
+.d{
+    margin-left: 89px;
+}
+
+.skills{
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.skill{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3rem;
+}
+
+.skills .section-head:before,
+.skills .section-head:after
+{background-color: #333}
+
+.skills .skill{
+    width: 70%;
+    margin: 80px auto;
+    text-align: left;
+}
+
+.skills .skill > div{
+    width: 100%;
+    height: 35px;
+    background: #eee;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.skills .skill > div span:first-child{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    min-width: 20%;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.skills .skill > div:first-of-type span:first-child{background: #BD4B00}
+.skills .skill > div:nth-of-type(2) span:first-child{background: #2573A6}
+.skills .skill > div:nth-of-type(3) span:first-child{background: #283848}
+.skills .skill > div:nth-of-type(4) span:first-child{background: #3F3F54}
+.skills .skill > div:nth-of-type(5) span:first-child{background: #10467E}
+.skills .skill > div:nth-of-type(6) span:first-child{background: #239C56}
+
+
+
+.skills .skill > div span:last-child{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 20%;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    background: #00f;
+    border-radius: 0 5px 5px 0;
+    text-align: right;
+    transition: all 3s ease
+}
+
+.skills .skill > div:first-of-type span:last-child{background: #E67E22}
+.skills .skill > div:nth-of-type(2) span:last-child{background: #3498DB}
+.skills .skill > div:nth-of-type(3) span:last-child{background: #2C3E50}
+.skills .skill > div:nth-of-type(4) span:last-child{background: #5A68A5}
+.skills .skill > div:nth-of-type(5) span:last-child{background: #4288D0}
+.skills .skill > div:nth-of-type(6) span:last-child{background: #2ECC71}
+
+
+img#mo7amed{
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+img#mo7amed:hover{
+  transform: scale(1.1,1.1);
+  box-shadow: 5px 5px 15px #000
+}

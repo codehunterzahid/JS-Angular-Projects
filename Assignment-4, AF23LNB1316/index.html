@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="hero" id="main">
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#main">My Resume</a>
+            </div>
+
+            <ul class="list">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="/urdu-cv.html">URDU CV</a></li>
+                <li><a href="/index.html">RESUME</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <a href=""><img src="./images/profile" alt="" class="profile"></a>
+            <h1>MUHAMMAD ZAHID</h1>
+            <p>Front End Web designer & developer.</p>
+            <div class="links">
+                <a href="/urdu-cv.html">Urdu CV</a>
+                <a href="./index.html">Resume</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about" id="about">
+
+        <h1 class="heading">About</h1>
+
+        <div class="about-me">
+            <div class="text">
+                <h1>About</h1> <br>
+                <p>Hello! I'm a passionate front-end developer with a keen eye for crafting engaging and responsive user interfaces. <br><br> My journey in web development has equipped me with a solid foundation in HTML, CSS, and JavaScript, enabling me to transform design concepts into seamless and interactive digital experiences.
+                </p>
+            </div>
+        
+
+        <div class="info">
+            <h1>Basic Information</h1>
+
+            <div>
+                <h4>Age:</h4>
+                <p class="a">21 Years</p>
+            </div>
+
+            <div>
+                <h4>Email:</h4>
+                <p class="b">codehuntingwithzahid@gmail.com</p>
+            </div>
+
+            <div>
+                <h4>Phone:</h4>
+                <p class="c">03086819013</p>
+            </div>
+
+            <div>
+                <h4>Address</h4>
+                <p class="d">Ichra, Lahore</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="skills" id="skills">
+
+        <h1 class="heading1">Skills</h1>
+  
+        <div class="skill">
+                          <div>
+                              <span>html5</span>
+                              <span class="progress">98%</span>
+                          </div>
+                          
+                          <div>
+                              <span>css3</span>
+                              <span class="progress">82%</span>
+                          </div>
+                          
+                          <div>
+                              <span>javascript</span>
+                              <span class="progress">95%</span>
+                          </div>
+                          
+                          <div>
+                              <span>jquery</span>
+                              <span class="progress">86%</span>
+                          </div>
+                          
+                          <div>
+                              <span>php</span>
+                              <span class="progress">76%</span>
+                          </div>
+                          
+                          <div>
+                              <span>myscl</span>
+                              <span class="progress">50%</span>
+                          </div>
+                          
+                          
+                      </div>
+        </a>
+      </div>
+      
+      
+
+
+    <!---script code to add functionality to navbar on scroll--->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        window.onscroll = function () {
+          scrollFunction();
+        };
+      
+        function scrollFunction() {
+          var navbar = document.querySelector(".navbar");
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            navbar.style.backgroundColor = "#40A249";
+          } else {
+            navbar.style.backgroundColor = "transparent";
+          }
+        }
+      });
+
+
+      window.onload = function () {
+    'use strict';
+    
+    var progreeBar = document.getElementsByClassName("progress");
+        
+        progreeBar[0].style.width = "77%";
+        progreeBar[1].style.width = "67%";
+        progreeBar[2].style.width = "76%";
+        progreeBar[3].style.width = "71%";
+        progreeBar[4].style.width = "61%";
+        progreeBar[5].style.width = "39%";
+    
+};
+    </script>
+      
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- Add a link to a Urdu font if necessary -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif; /* Use the desired Urdu font */
+        }
+    </style>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<body>
+
+    <div class="hero" id="main">
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#main">میرا رزومے</a>
+            </div>
+
+            <ul class="list">
+                <li><a href="#about">میرے بارے</a></li>
+                <li><a href="#skills">سکلز</a></li>
+                <li><a href="/index.html">انگلش سی وی</a></li>
+                <li><a href="/index.html">رزومے</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <a href=""><img src="./images/profile" alt="" class="profile"></a>
+            <h1>محمد زاہد</h1>
+            <p>فرنٹ اینڈ ویب ڈیزائنر اینڈ ڈویلپر۔</p>
+            <div class="links">
+                <a href="/index.html">انگلش سی وی</a>
+                <a href="./index.html">رزومے</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about" id="about">
+
+        <h1 class="heading">میرے بارے میں</h1>
+
+        <div class="about-me">
+            <div class="text">
+                <h1>میرے بارے میں</h1> <br>
+                <p>ہیلو! میں ایک پرجوش فرنٹ اینڈ ڈویلپر ہوں جس کا توجہ ایک دلچسپ اور ریسپانسو بیل یوزر انٹرفیس بنانے پر ہے۔ میرا ویب ڈویلپمنٹ میں سفر مجھے ایچ ٹی ایم ایل، سی ایس ایس، اور جاوا اسکرپٹ میں مضبوط بنا دیا ہے، جو مجھے ڈیزائن کے تصورات کو بے درست اور متعامل ڈیجیٹل تجاوزات میں تبدیل کرنے میں مدد فراہم کرتا ہے۔</p>
+            </div>
+        
+
+        <div class="info">
+            <h1>بنیادی معلومات</h1>
+
+            <div>
+                <h4>عمر:</h4>
+                <p class="a">21 سال</p>
+            </div>
+
+            <div>
+                <h4>ای میل:</h4>
+                <p class="b">codehuntingwithzahid@gmail.com</p>
+            </div>
+
+            <div>
+                <h4>فون:</h4>
+                <p class="c">03086819013</p>
+            </div>
+
+            <div>
+                <h4>پتہ:</h4>
+                <p class="d">اچھڑا، لاہور</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="skills" id="skills">
+
+        <h1 class="heading1">سکلز</h1>
+  
+        <div class="skill">
+            <div>
+                <span>html5</span>
+                <span class="progress">98%</span>
+            </div>
+                          
+            <div>
+                <span>css3</span>
+                <span class="progress">82%</span>
+            </div>
+                          
+            <div>
+                <span>javascript</span>
+                <span class="progress">95%</span>
+            </div>
+                          
+            <div>
+                <span>jquery</span>
+                <span class="progress">86%</span>
+            </div>
+                          
+            <div>
+                <span>php</span>
+                <span class="progress">76%</span>
+            </div>
+                          
+            <div>
+                <span>myscl</span>
+                <span class="progress">50%</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---script code to add functionality to navbar on scroll--->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        window.onscroll = function () {
+          scrollFunction();
+        };
+      
+        function scrollFunction() {
+          var navbar = document.querySelector(".navbar");
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            navbar.style.backgroundColor = "#40A249";
+          } else {
+            navbar.style.backgroundColor = "transparent";
+          }
+        }
+      });
+
+
+      window.onload = function () {
+    'use strict';
+    
+    var progreeBar = document.getElementsByClassName("progress");
+        
+        progreeBar[0].style.width = "77%";
+        progreeBar[1].style.width = "67%";
+        progreeBar[2].style.width = "76%";
+        progreeBar[3].style.width = "71%";
+        progreeBar[4].style.width = "61%";
+        progreeBar[5].style.width = "39%";
+    
+};
+    </script>
+</body>
+</html>
